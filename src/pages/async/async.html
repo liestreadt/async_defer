@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link href="../../style.css" rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () =>
+        console.log("DOMContentLoaded event fired.")
+      );
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Basic HTML</h1>
+        <h2 class="main_nav">
+          <a href="">Link tag diff</a>
+          <a href="">Script tag diff</a>
+        </h2>
+        <div class="sub_nav">
+          <a href="../../../index.html">Default</a>
+          <a href="">Async</a>
+          <a href="../defer/defer.html">Defer</a>
+        </div>
+      </nav>
+    </header>
+    <h3 title="Open developer tools to see more information">Async scripts</h3>
+    <script
+      onload="console.log('Script with async attribute loaded.')"
+      src="./async.js"
+    ></script>
+  </body>
+</html>

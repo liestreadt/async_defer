@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link href="./src/style.css" rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () =>
+        console.log("DOMContentLoaded event fired.")
+      );
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Basic HTML</h1>
+        <h2 class="main_nav">
+          <a href="./src/pages/links/linksInHead.html">Link tag diff</a>
+          <a href="">Script tag diff</a>
+        </h2>
+        <div class="sub_nav">
+          <a href="">Default</a>
+          <a href="./src/pages/async/async.html">Async</a>
+          <a href="./src/pages/defer/defer.html">Defer</a>
+        </div>
+      </nav>
+    </header>
+    <h3 title="Open developer tools to see more information">
+      Default scripts
+    </h3>
+    <script
+      onload="console.log('Default script loaded.')"
+      src="./src/main.js"
+    ></script>
+  </body>
+</html>
